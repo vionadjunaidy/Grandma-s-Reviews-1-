@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script-filter.js"></script>
+    <script src="script-navbar.js"></script>
+    <script src="script-sortby.js"></script>
+    <script src="script-active.js"></script>
+</head>
+
+<body>
+    <div class="navbar" id="myNavbar">
+        <div class="sidebar">
+            <div class="top">
+                <div class="exit" onclick=hideSidebar()>
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <a href="index.html">
+                    <div class="item">
+                        <button class="page background-hover">Home</button>
+                    </div>
+                </a>
+                <div class="smborder"></div>
+
+                <a href="restaurant(1).html">
+                    <div class="item">
+                        <button class="page background-hover active">Restaurants</button>
+                    </div>
+                </a>
+                <div class="smborder"></div>
+
+                <a href="recipe(1).html">
+                    <div class="item">
+                        <button class="page background-hover">Recipes</button>
+                    </div>
+                </a>
+                <div class="smborder"></div>
+
+                <a href="aboutus.html">
+                    <div class="item">
+                        <button class="page background-hover">About Us</button>
+                    </div>
+                </a>
+                <div class="smborder"></div>
+            </div>
+
+            <div class="login">
+                <div class="item" id="loginContainer">
+                    <a href="login.html">
+                        <button class="page">Log in</button>
+                    </a>
+                </div>
+            </div>
+            <div class="smborder"></div>
+        </div>
+
+        <div class="home">
+            <div class="items">
+                <div class="left">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="logo.png" alt="Grandma's Reviews Logo">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="restaurant(1).html" class="background-hover"><button
+                                class="page active">Restaurants</button></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="recipe(1).html" class="background-hover"><button class="page">Recipes</button></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="aboutus.html" class="background-hover"><button class="page">About Us</button></a>
+                    </div>
+                </div>
+
+                <div class="login">
+                    <div class="item">
+                        <a href="login.html">
+                            <button class="page">Log in</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu" onclick=showSidebar()>
+            <a href="#">
+                <i class='bx bx-menu'></i>
+            </a>
+        </div>
+    </div>
+    <div class="cheat-space"></div>
+    <h1>Restaurants</h1>
+
+    <div class="gallery">
+        <ul class="controls">
+            <li class="buttons active" data-filter="all">All</li>
+            <li class="buttons" data-filter="local">Local</li>
+            <li class="buttons" data-filter="western">Western</li>
+            <li class="buttons" data-filter="asian">Asian</li>
+        </ul>
+
+        <div class="row-of-buttons">
+            <div class="sort-by">
+                <button id="byPrice">BY PRICE ￪</button>
+                <button id="byPrice1">BY PRICE ￬</button>
+                <button id="byRating">BY RATING ￬</button>
+                <button id="byRating1">BY RATING ￪</button>
+            </div>
+
+            <a href="postRest.html"><button class="upload">Upload restaurant</button></a>
+        </div>
+
+        <div class="image-container list-restaurants">
+            <div class="box local">
+                <a href="pagi-sore.html" class="image local">
+                    <img src="assets/resto/pagi-sore/pagi-sore1.jpg" alt="Pagi Sore">
+                    <h2>Pagi Sore, Kemang</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i> |
+                        Price:
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #6c6c6c;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="price">3</div>
+                    <div class="rating">5</div>
+                </a>
+            </div>
+
+            <div class="box local">
+                <a href="remboelan.html" class="image local">
+                    <img src="assets/resto/remboelan/remboelan1.jpg" alt="Remboelan">
+                    <h2>Remboelan, Plaza Senayan</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i> |
+                        Price:
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="price">4</div>
+                    <div class="rating">4</div>
+                </a>
+            </div>
+
+            <div class="box local">
+                <a href="cafe-batavia.html" class="image local">
+                    <img src="assets/resto/cafe-batavia/cafe-batavia1.jpg" alt="Cafe Batavia">
+                    <h2>Cafe Batavia</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i> |
+                        Price:
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #6c6c6c;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="price">3</div>
+                    <div class="rating">3</div>
+                </a>
+            </div>
+
+            <div class="box local">
+                <a href="plataran-tiga-dari.html" class="image local">
+                    <img src="assets/resto/plataran/plataran.jpg" alt="Plataran Tiga Dari">
+                    <h2>Plataran Tiga Dari</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i> |
+                        Price:
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #6c6c6c;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="price">3</div>
+                    <div class="rating">5</div>
+                </a>
+            </div>
+
+            <div class="box local">
+                <a href="layar.html" class="image local">
+                    <img src="assets/resto/layar/layar1.jpg" alt="Layar Seafood">
+                    <h2>Layar Seafood</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i> |
+                        Price:
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="price">4</div>
+                    <div class="rating">5</div>
+                </a>
+            </div>
+
+            <div class="box western">
+                <a href="osteria-gia.html" class="image western">
+                    <img src="assets/resto/osteria/osteria2.jpg" alt="Osteria Gia">
+                    <h2>Osteria Gia</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i> |
+                        Price:
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="price">4</div>
+                    <div class="rating">4</div>
+                </a>
+            </div>
+
+            <div class="box western">
+                <a href="social-house.html" class="image western">
+                    <img src="assets/resto/social-house/social-house1.jpg" alt="Social House">
+                    <h2>Social House</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i> |
+                        Price:
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #6c6c6c;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="price">3</div>
+                    <div class="rating">2</div>
+                </a>
+            </div>
+
+            <div class="box western">
+                <a href="oma-elly.html" class="image western">
+                    <img src="assets/resto/oma-elly/oma-elly1.jpg" alt="Oma Elly Kitchen">
+                    <h2>Oma Elly Kitchen</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i> |
+                        Price:
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="price">4</div>
+                    <div class="rating">5</div>
+                </a>
+            </div>
+
+            <div class="box western">
+                <a href="cork-screw.html" class="image western">
+                    <img src="assets/resto/cork-screw/cork-screw1.jpg" alt="Cork & Screw">
+                    <h2>Cork & Screw</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i> |
+                        Price:
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="price">4</div>
+                    <div class="rating">4</div>
+                </a>
+            </div>
+
+            <div class="box western">
+                <a href="pizza-marzano.html" class="image western">
+                    <img src="assets/resto/marzano/marzano1.jpg" alt="Pizza Marzano">
+                    <h2>Pizza Marzano, Senayan City</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>></i> |
+                        Price:
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #6c6c6c;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="price">3</div>
+                    <div class="rating">4</div>
+                </a>
+            </div>
+
+            <div class="box asian">
+                <a href="shuguo.html" class="image asian">
+                    <img src="assets/resto/shu-guo/shu-guo1.jpg" alt="Shu Guo Yin Xiang">
+                    <h2>Shu Guo Yin Xiang</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i> |
+                        Price:
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                    </p>
+                    <div class="price">5</div>
+                    <div class="rating">5</div>
+                </a>
+            </div>
+
+            <div class="box asian">
+                <a href="dintaifung.html" class="image asian">
+                    <img src="assets/resto/din-tai-fung/din-tai-fung1.webp" alt="Din Tai Fung">
+                    <h2>Din Tai Fung, Pacific Place</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i> |
+                        Price:
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #6c6c6c;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="price">3</div>
+                    <div class="rating">4</div>
+                </a>
+            </div>
+
+            <div class="box asian">
+                <a href="angke.html" class="image asian">
+                    <img src="assets/resto/angke/angke1.jpg" alt="Angke Restaurant">
+                    <h2>Angke Restaurant</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i> |
+                        Price:
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="price">4</div>
+                    <div class="rating">5</div>
+                </a>
+            </div>
+
+            <div class="box asian">
+                <a href="3-wise-monkeys.html" class="image asian">
+                    <img src="assets/resto/3-wise/3-wise1.jpg" alt="3 Wise Monkeys">
+                    <h2>3 Wise Monkeys, Senopati</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i> |
+                        Price:
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #6c6c6c;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #6c6c6c;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="price">2</div>
+                    <div class="rating">4</div>
+                </a>
+            </div>
+
+            <div class="box asian">
+                <a href="cheongdam.html" class="image asian">
+                    <img src="assets/resto/cheongdam/cheongdam1.jpg" alt="Cheong Dam Garden">
+                    <h2>Cheong Dam Garden</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i> |
+                        Price:
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                        <i class='bx bxs-dollar-circle' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="price">4</div>
+                    <div class="rating">5</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="footer">
+            <div class="info">
+                <img src="assets/logo2.png" alt="logo">
+                <div class="newsletter">
+                    <p>Subscribe to our newsletter!</p>
+                    <div class="input-data">
+                        <form>
+                            <input type="email" id="email" name="email" placeholder="E-mail">
+                        </form>
+                        <button href="#">Subscribe</button>
+                    </div>
+                </div>
+                <div class="socials">
+                    <p>Follow us</p>
+                    <a><i class='bx bxl-facebook-square'></i></a>
+                    <a><i class='bx bxl-instagram-alt'></i></a>
+                    <a><i class='bx bxl-twitter'></i></a>
+                </div>
+                <div class="call">
+                    <p>Call us</p>
+                    <p><b>+62 123 1678 932</b></p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <hr>
+                <p>© 2023 Grandma's Reviews, Jakarta, Indonesia. All Rights Reserved</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

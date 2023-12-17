@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script-filter.js"></script>
+    <script src="script-navbar.js"></script>
+    <script src="script-sortby.js"></script>
+    <script src="script-active.js"></script>
+</head>
+
+<body>
+    <div class="navbar" id="myNavbar">
+        <div class="sidebar">
+            <div class="top">
+                <div class="exit" onclick=hideSidebar()>
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <a href="index.html">
+                    <div class="item">
+                        <button class="page background-hover">Home</button>
+                    </div>
+                </a>
+                <div class="smborder"></div>
+
+                <a href="restaurant(1).html">
+                    <div class="item">
+                        <button class="page background-hover">Restaurants</button>
+                    </div>
+                </a>
+                <div class="smborder"></div>
+
+                <a href="recipe(1).html">
+                    <div class="item">
+                        <button class="page background-hover active">Recipes</button>
+                    </div>
+                </a>
+                <div class="smborder"></div>
+
+                <a href="aboutus.html">
+                    <div class="item">
+                        <button class="page background-hover">About Us</button>
+                    </div>
+                </a>
+                <div class="smborder"></div>
+            </div>
+
+            <div class="login">
+                <div class="item" id="loginContainer">
+                    <a href="login.html">
+                        <button class="page">Log in</button>
+                    </a>
+                </div>
+            </div>
+            <div class="smborder"></div>
+        </div>
+
+        <div class="home">
+            <div class="items">
+                <div class="left">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="logo.png" alt="Grandma's Reviews Logo">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="restaurant(1).html" class="background-hover"><button
+                                class="page ">Restaurants</button></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="recipe(1).html" class="background-hover"><button
+                                class="page active">Recipes</button></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="aboutus.html" class="background-hover"><button class="page">About Us</button></a>
+                    </div>
+                </div>
+
+                <div class="login">
+                    <div class="item">
+                        <a href="login.html">
+                            <button class="page">Log in</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu" onclick=showSidebar()>
+            <a href="#">
+                <i class='bx bx-menu'></i>
+            </a>
+        </div>
+    </div>
+    <div class="cheat-space"></div>
+    <h1>Recipes</h1>
+
+    <div class="gallery">
+        <ul class="controls">
+            <li class="buttons active" data-filter="all">All</li>
+            <li class="buttons" data-filter="local">Local</li>
+            <li class="buttons" data-filter="western">Western</li>
+            <li class="buttons" data-filter="asian">Asian</li>
+        </ul>
+
+        <div class="row-of-buttons">
+            <div class="sort-by">
+                <button id="byRating">BY RATING ￬</button>
+                <button id="byRating1">BY RATING ￪</button>
+            </div>
+            <a href="postRecipe.html"><button class="upload">Upload recipe</button></a>
+        </div>
+
+        <div class="image-container list-recipes">
+            <div class="box local">
+                <a href="nasi goreng.html" class="image local">
+                    <img src="assets/recipe/nasi-goreng.jpg" alt="Nasi Goreng">
+                    <h2>Nasi Goreng</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="rating">4</div>
+                </a>
+            </div>
+
+            <div class="box local">
+                <a href="rendang.html" class="image local">
+                    <img src="assets/recipe/rendang.jpg" alt="Rendang">
+                    <h2>Rendang</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                    </p>
+                    <div class="rating">5</div>
+                </a>
+            </div>
+
+            <div class="box local">
+                <a href="soto.html" class="image local">
+                    <img src="assets/recipe/soto.webp" alt="Soto Ayam">
+                    <h2>Soto Ayam</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="rating">2</div>
+                </a>
+            </div>
+
+            <div class="box local">
+                <a href="rawon.html" class="image local">
+                    <img src="assets/recipe/rawon.jpg" alt="Rawon">
+                    <h2>Rawon</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="rating">4</div>
+                </a>
+            </div>
+
+            <div class="box local">
+                <a href="gado-gado.html" class="image local">
+                    <img src="assets/recipe/gado-gado.jpg" alt="Gado-Gado">
+                    <h2>Gado-Gado</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="rating">3</div>
+                </a>
+            </div>
+
+            <div class="box western">
+                <a href="agliorecipe.html" class="image western">
+                    <img src="assets/recipe/aglio olio/aglioolio.jpg" alt="Aglio Olio">
+                    <h2>Aglio Olio</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="rating">4</div>
+                </a>
+            </div>
+
+            <div class="box western">
+                <a href="pan-seared-salmon-asparagus.html" class="image western">
+                    <img src="assets/recipe/pan-seared-salmon/pan-seared-salmon.jpg"
+                        alt="3 Pan Seared Salmon with Asparagus">
+                    <h2>Pan Seared Salmon with Asparagus</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                    </p>
+                    <div class="rating">5</div>
+                </a>
+            </div>
+
+            <div class="box western">
+                <a href="lasagna.html" class="image western">
+                    <img src="assets/recipe/lasagna/lasagna.jpg" alt="Lasagna">
+                    <h2>Lasagna</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="rating">1</div>
+                </a>
+            </div>
+
+            <div class="box western">
+                <a href="gnocchi-soup.html" class="image western">
+                    <img src="assets/recipe/gnocchi-soup.jpg" alt="Olive Garden Chicken Gnocchi Soup">
+                    <h2>Olive Garden Chicken Gnocchi Soup</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="rating">3</div>
+                </a>
+            </div>
+
+            <div class="box western">
+                <a href="steak-salad.html" class="image western">
+                    <img src="assets/recipe/steak-salad.png" alt="Steak Salad">
+                    <h2>Steak Salad</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="rating">3</div>
+                </a>
+            </div>
+
+            <div class="box asian">
+                <a href="kimchi-fried-rice.html" class="image asian">
+                    <img src="assets/recipe/kimchi-fried-rice.jpg" alt="Kimchi Fried Rice">
+                    <h2>Kimchi Fried Rice</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="rating">2</div>
+                </a>
+            </div>
+
+            <div class="box asian">
+                <a href="beef-and-broccoli.html" class="image asian">
+                    <img src="assets/recipe/beef-and-broccoli.jpg" alt="Beef and Broccoli">
+                    <h2>Beef and Broccoli</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="rating">3</div>
+                </a>
+            </div>
+
+            <div class="box asian">
+                <a href="pho.html" class="image asian">
+                    <img src="assets/recipe/pho/pho.jpg" alt="Vietnamese Pho">
+                    <h2>Vietnamese Pho</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="rating">4</div>
+                </a>
+            </div>
+
+            <div class="box asian">
+                <a href="xiao-long-bao.html" class="image asian">
+                    <img src="assets/recipe/xiaolongbao/xiao-long-bao.png" alt="Xiao Long Bao">
+                    <h2>Xiao Long Bao</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                    </p>
+                    <div class="rating">5</div>
+                </a>
+            </div>
+
+            <div class="box asian">
+                <a href="omurice.html" class="image asian">
+                    <img src="assets/recipe/omurice.jpg" alt="Omurice">
+                    <h2>Omurice</h2>
+                    <p>Ratings:
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #b19232;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                        <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                    </p>
+                    <div class="rating">3</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="footer">
+            <div class="info">
+                <img src="assets/logo2.png" alt="logo">
+                <div class="newsletter">
+                    <p>Subscribe to our newsletter!</p>
+                    <div class="input-data">
+                        <form>
+                            <input type="email" id="email" name="email" placeholder="E-mail">
+                        </form>
+                        <button href="#">Subscribe</button>
+                    </div>
+                </div>
+                <div class="socials">
+                    <p>Follow us</p>
+                    <a><i class='bx bxl-facebook-square'></i></a>
+                    <a><i class='bx bxl-instagram-alt'></i></a>
+                    <a><i class='bx bxl-twitter'></i></a>
+                </div>
+                <div class="call">
+                    <p>Call us</p>
+                    <p><b>+62 123 1678 932</b></p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <hr>
+                <p>© 2023 Grandma's Reviews, Jakarta, Indonesia. All Rights Reserved</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

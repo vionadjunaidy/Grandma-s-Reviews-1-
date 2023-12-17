@@ -1,0 +1,115 @@
+.ui-controlgroup-vertical {
+    width: 150px;
+}
+
+.ui-controlgroup.ui-controlgroup-vertical>button.ui-button,
+.ui-controlgroup.ui-controlgroup-vertical>.ui-controlgroup-label {
+    text-align: center;
+}
+
+#location {
+    width: 120px;
+}
+
+.ui-controlgroup-horizontal .ui-spinner-input {
+    width: 20px;
+}
+
+img {
+    min-width: 150px;
+}
+
+.btn1 {
+    text-wrap: nowrap;
+    margin: auto;
+}
+
+a {
+    color: beige;
+}
+
+p {
+    color: beige;
+}
+
+.btn {
+    text-wrap: nowrap;
+    vertical-align: middle;
+}
+
+body {
+    display: flex;
+    background-color: #c7ab59;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: beige;
+}
+
+.card {
+    width: 50%;
+    min-width: 350px;
+    background-color: #302718;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-self: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+    button span {
+        display: none;
+    }
+}
+
+.rate {
+    float: left;
+    height: 35px;
+    padding: 0 2px;
+}
+
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 25px;
+    color: #ccc;
+    font-size: 50px;
+}
+
+.rate:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rate>input:checked~label {
+    color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+    color: #c59b08;
+}

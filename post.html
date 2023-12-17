@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Restaurant</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color: #DED2A8;">
+    <div class="w3-container w3-display-middle" style="max-width: 800px;">
+        <form action="/action_page.php" class="needs-validation w3-container w3-card-4 w3-light-grey w3-margin"
+            novalidate>
+            <h2 class="w3-center">Upload Restaurant</h2>
+            <div class="w3-row w3-section w3-rest">
+                <input id="name" class="form-control w3-input w3-border w3-round" type="text" name="name"
+                    placeholder="Restaurant Name*" required>
+                <small id="namecheck" class="form-text text-muted invalid-feedback">Restaurant name is missing</small>
+            </div>
+            <div class="w3-row w3-section w3-rest">
+                <label for="open">Select the opening time:</label>
+                <input type="time" id="open" name="open" required>
+                <label for="close">Select the closing time:</label>
+                <input type="time" id="close" name="close" required>
+            </div>
+            <div class="w3-section w3-rest">
+                <input id="phone" class="form-control w3-input w3-border w3-round" type="tel" name="phone"
+                    placeholder="Phone Number" required>
+            </div>
+            <div class="w3-row w3-section w3-rest">
+                <textarea id="description" class="form-control w3-round" name="description" placeholder="Description*"
+                    required></textarea>
+                <small id="descriptioncheck" class="form-text text-muted invalid-feedback">Description is
+                    missing</small>
+            </div>
+            <div class="w3-section w3-rest">
+                <input id="location" class="form-control w3-input w3-border w3-round" type="text" name="location"
+                    placeholder="Location*" required>
+            </div>
+            <div class="w3-section w3-rest">
+                <label for="img">Select pictures of the restaurant</label>
+                <input type="file" id="img" name="img" accept="image/*" multiple>
+            </div>
+            <div class="submit-button"><button id="submitbtn"
+                    class="w3-button w3-blue w3-round w3-block w3-section w3-ripple w3-padding">Submit</button></div>
+        </form>
+    </div>
+</body>
+
+</html>

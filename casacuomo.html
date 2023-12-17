@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Cuomo Ristorante</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>    
+    <script src="script-navbar.js"></script>
+    <script src="script-carousel.js"></script>
+</head>
+
+<body>
+    <div class="navbar" id="myNavbar">
+        <div class="sidebar">
+            <div class="top">
+                <div class="exit" onclick=hideSidebar()>
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <a href="index.html">
+                    <div class="item">
+                        <button class="page background-hover">Home</button>
+                    </div>
+                </a>
+                <div class="smborder"></div>
+
+                <a href="restaurant(1).html">
+                    <div class="item">
+                        <button class="page background-hover active">Restaurants</button>
+                    </div>
+                </a>
+                <div class="smborder"></div>
+
+                <a href="recipe(1).html">
+                    <div class="item">
+                        <button class="page background-hover">Recipes</button>
+                    </div>
+                </a>
+                <div class="smborder"></div>
+
+                <a href="aboutus.html">
+                    <div class="item">
+                        <button class="page background-hover">About Us</button>
+                    </div>
+                </a>
+                <div class="smborder"></div>
+            </div>
+
+            <div class="login">
+                <div class="item" id="loginContainer">
+                    <a href="login.html">
+                        <button class="page">Log in</button>
+                    </a>
+                </div>
+            </div>
+            <div class="smborder"></div>
+        </div>
+
+        <div class="home">
+            <div class="items">
+                <div class="left">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="logo.png" alt="Grandma's Reviews Logo">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="restaurant(1).html" class="background-hover"><button class="page active">Restaurants</button></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="recipe(1).html" class="background-hover"><button class="page">Recipes</button></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="aboutus.html" class="background-hover"><button class="page">About Us</button></a>
+                    </div>
+                </div>
+
+                <div class="login">
+                    <div class="item">
+                        <a href="login.html">
+                            <button class="page">Log in</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu" onclick=showSidebar()>
+            <a href="#">
+                <i class='bx bx-menu'></i>
+            </a>
+        </div>
+    </div>
+    <div class="cheat-space"></div>
+
+    <div class="container">
+        <div class="container-carousel">
+            <div class="carousel">
+                <div class="slider">
+                    <section><img src="casa1.jpg" alt="Restaurant Environment"></section>
+                    <section><img src="casa2.jpg" alt="Meringue Dessert"></section>
+                    <section><img src="casa3.jpg" alt="Pizza"></section>
+                </div>
+                <div class="controls">
+                    <span class="arrow left"><i class='bx bxs-left-arrow'></i></span>
+                    <span class="arrow right"><i class='bx bxs-right-arrow' ></i></span>
+                    <ul>
+                        <li class="selected"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text">
+            <h1>Casa Cuomo Ristorante</h1>
+            <p>Casa Cuomo Ristorante specializes in Italian-Japanese fusion food, focusing mainly on the pizza and the pastas, which chef Salvatore Cuomo making a branch in Indonesia from the main restaurant in Japan.</p>
+            <br>
+            <p><b>Location:</b>Jl. Gunawarman No.57, Rw. Bar., Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12180</p>
+            <br>
+            <p><b>Number:</b>  0821-2377-8668</p>
+            <br>
+            <p><b>Opening Hours:</b> Monday - Sunday (10:00 - 23:00)</p>
+            <br>
+            <p><b>Rating:</b>
+                <i class='bx bxs-star' style="color: #b19232;"></i> 
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star'></i>
+            </p>
+            <br>
+            <p><b>Price:</b>
+                <i class='bx bxs-dollar-circle' style="color: #b19232;"></i> 
+                <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                <i class='bx bxs-dollar-circle' style="color: #b19232;"></i>
+                <i class='bx bxs-dollar-circle'></i>
+                <i class='bx bxs-dollar-circle'></i>
+            </p>
+        </div>
+    </div>
+
+    <div class="reviews">
+        <h2>What they say...</h2>
+            <div class="speech-bubble"><b>Aretha S.</b>
+                <div class="smborder"></div>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <p>This place is quite nice and I really recommend the truffle pasta and spritz, it is really worth to try out, because the pasta is cooked on the cheese wheel.</p>
+            </div>
+        
+            <div class="speech-bubble"><b>Dini I. </b>
+                <div class="smborder"></div>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                <p>I celebrated a cousin's birthday here and we ordered so much of the food. We tried out some things and the roe pasta isn't particularly good, but the rest is quite delicious.</p>
+            </div>
+        
+            <div class="speech-bubble"><b>Steven</b>
+                <div class="smborder"></div>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <p>I came here since it opened and it has improved so much, especially the orange spritz. It was diluted when I first came here, but now it's better.</p>
+            </div>
+            <a href="review.html"><button>Upload a Review</button></a>
+    </div>
+    <footer>
+        <div id="footer-restaurant">
+            <div class="info">
+                <img src="assets/logo2.png" alt="logo">
+                <div class="newsletter">
+                    <p>Subscribe to our newsletter!</p>
+                    <div class="input-data">
+                        <form>
+                            <input type="email" id="email" name="email" placeholder="E-mail">
+                        </form>
+                        <button href="#">Subscribe</button>
+                    </div>
+                </div>
+                <div class="socials">
+                    <p>Follow us</p>
+                    <a><i class='bx bxl-facebook-square'></i></a>
+                    <a><i class='bx bxl-instagram-alt'></i></a>
+                    <a><i class='bx bxl-twitter'></i></a>
+                </div>
+                <div class="call">
+                    <p>Call us</p>
+                    <p><b>+62 123 1678 932</b></p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <hr>
+                <p>© 2023 Grandma's Reviews, Jakarta, Indonesia. All Rights Reserved</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>

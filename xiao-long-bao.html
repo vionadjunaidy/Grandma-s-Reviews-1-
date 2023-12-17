@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiao Long Bao</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style-recipe.css">
+    <script src="script-recipe.js"></script>
+</head>
+
+<body>
+    <div class="navbar" id="myNavbar">
+        <div class="sidebar">
+            <div class="top">
+                <div class="exit" onclick=hideSidebar()>
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <a href="index.html">
+                    <div class="item">
+                        <button class="page background-hover">Home</button>
+                    </div>
+                </a>
+                <div class="smborder"></div>
+
+                <a href="restaurant(1).html">
+                    <div class="item">
+                        <button class="page background-hover">Restaurants</button>
+                    </div>
+                </a>
+                <div class="smborder"></div>
+
+                <a href="recipe(1).html">
+                    <div class="item">
+                        <button class="page background-hover active">Recipes</button>
+                    </div>
+                </a>
+                <div class="smborder"></div>
+
+                <a href="aboutus.html">
+                    <div class="item">
+                        <button class="page background-hover">About Us</button>
+                    </div>
+                </a>
+                <div class="smborder"></div>
+            </div>
+
+            <div class="login">
+                <div class="item" id="loginContainer">
+                    <a href="login.html">
+                        <button class="page">Log in</button>
+                    </a>
+                </div>
+            </div>
+            <div class="smborder"></div>
+        </div>
+
+        <div class="home">
+            <div class="items">
+                <div class="left">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="logo.png" alt="Grandma's Reviews Logo">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="restaurant(1).html" class="background-hover"><button
+                                class="page ">Restaurants</button></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="recipe(1).html" class="background-hover"><button
+                                class="page active">Recipes</button></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="aboutus.html" class="background-hover"><button class="page">About Us</button></a>
+                    </div>
+                </div>
+
+                <div class="login">
+                    <div class="item">
+                        <a href="login.html">
+                            <button class="page">Log in</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu" onclick=showSidebar()>
+            <a href="#">
+                <i class='bx bx-menu'></i>
+            </a>
+        </div>
+    </div>
+    <div class="cheat-space"></div>
+
+    <div class="container">
+        <div class="description">
+            <div class="content">
+                <h1>Xiao Long Bao</h1>
+                <p><b>By TasteMade</b></p>
+                <p class="summary">Xiao Long Bao, the legendary dim sum that has captivated the world by the sheer
+                    impossibility to perfect it.</p>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <p><i class='bx bxs-bowl-hot'></i> <b>Servings: </b>20(Dumplings) | <i class='bx bxs-time'></i> <b>Prep:
+                    </b> 1 hour 35 minutes| <i class='bx bxs-time'></i> <b>Cook: </b>10 minutes</p>
+            </div>
+        </div>
+
+        <div class="picture">
+            <img src="assets/recipe/xiaolongbao/xiao-long-bao.png" alt="Xiao Long Bao">
+        </div>
+    </div>
+
+    <div class="ingredients">
+        <h2>Ingredients</h2>
+
+        <div class="content">
+            <div class="item">
+                <img src="assets/recipe/wrapping.png" alt="olive oil">
+                <p>20-25 wrappings, just in case of tearing</p>
+            </div>
+
+            <div class="item">
+                <img src="assets/recipe/cimkenstock.png" alt="asparagus">
+                <p>150-200ml of chicken stock</p>
+            </div>
+
+            <div class="item">
+                <img src="assets/recipe/gelatin.png" alt="salmon">
+                <p>30 grams of gelatinI(sheet or powder)</p>
+            </div>
+
+            <div class="item">
+                <img src="assets/recipe/pho/beef.png" alt="seasoning">
+                <p>150 grams of ground pork</p>
+            </div>
+
+            <div class="item">
+                <img src="assets/recipe/green onion.png" alt="salt">
+                <p>2 stalks of green onions</p>
+            </div>
+
+            <div class="item">
+                <img src="assets/recipe/pho/ginger.png" alt="salt">
+                <p>3 grams of ginger</p>
+            </div>
+
+            <div class="item">
+                <img src="assets/recipe/soy.png" alt="salt">
+                <p>5ml of soy sauce</p>
+            </div>
+
+            <div class="item">
+                <img src="assets/recipe/sesame.png" alt="salt">
+                <p>5ml of sesame oil</p>
+            </div>
+
+            <div class="item">
+                <img src="assets/recipe/snp.png" alt="salt">
+                <p>3 grams of salt and however much pepper to taste</p>
+            </div>
+
+            <div class="item">
+                <img src="assets/recipe/pho/sugar.png" alt="salt">
+                <p>8 grams of sugar</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="steps">
+        <h2>Steps</h2>
+        <div class="carousel">
+            <div class="slider">
+                <section>
+                    <div class="subheading">
+                        <h3>Step 1</h3>
+                    </div>
+                    <div class="desc">
+                        <img src="assets/recipe/aglio olio/step1.jpg" alt="boil spaghetti">
+                        <p>Boil the spaghetti</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="subheading">
+                        <h3>Step 2</h3>
+                    </div>
+                    <div class="desc">
+                        <img src="assets/recipe/aglio olio/step2.jpg" alt="toast garlic in olive oil">
+                        <p>Toast the garlic in olive oil</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="subheading">
+                        <h3>Step 3</h3>
+                    </div>
+                    <div class="desc">
+                        <img src="assets/recipe/aglio olio/step3.jpg" alt="coat pasta in sauce">
+                        <p>Coat the pasta in the sauce</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="subheading">
+                        <h3>Step 4</h3>
+                    </div>
+                    <div class="desc">
+                        <img src="assets/recipe/aglio olio/step4.jpg" alt="incorporate pasta water">
+                        <p>Incorporate the pasta water</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="subheading">
+                        <h3>Step 5</h3>
+                    </div>
+                    <div class="desc">
+                        <img src="assets/recipe/aglio olio/aglioolio.jpg" alt="final product">
+                        <p>Serve and enjoy!</p>
+                    </div>
+                </section>
+            </div>
+            <div class="controls">
+                <span class="arrow left"><i class='bx bxs-left-arrow'></i></span>
+                <span class="arrow right"><i class='bx bxs-right-arrow'></i></span>
+                <ul>
+                    <li class="selected"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-row">
+        <div class="label">
+            <h2>Nutrition Facts</h2>
+            <div class="smborder"></div>
+            <br>
+            <p><b>Calories</b> <span class="right">448kcal</span></p>
+            <p><b>Carbohydrates</b> <span class="right">37g</span></p>
+            <p><b>Protein</b> <span class="right">30g</span></p>
+            <p><b>Fat</b> <span class="right">21g</span></p>
+            <p><b>Saturated Fat</b> <span class="right">10g</span></p>
+            <p><b>Cholesterol</b> <span class="right">82mg</span></p>
+            <p><b>Sodium</b> <span class="right">1400mg</span></p>
+            <p><b>Potassium</b> <span class="right">876mg</span></p>
+            <p><b>Vitamin C</b> <span class="right">17mg</span></p>
+            <p><b>Calcium</b> <span class="right">442mg</span></p>
+            <p><b>Iron</b> <span class="right">4mg</span></p>
+        </div>
+
+        <div class="reviews">
+            <h2>What they say...</h2>
+            <div class="speech-bubble"><b>John L.</b>
+                <div class="smborder"></div>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                <p>Easily the best homemade xiao long bao, my grandchildren love it.</p>
+            </div>
+
+            <div class="speech-bubble"><b>O. Waseem</b>
+                <div class="smborder"></div>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <p>As a dimsum lover, I told my brother to make this for me and the results are amazing.</p>
+            </div>
+
+            <div class="speech-bubble"><b>Fani T.</b>
+                <div class="smborder"></div>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                <p>I told my niece to make it, but she kind of messed it up a little bit, and the skin teared a lot
+                    after steamed. Don't let it in too long in the steamer, it'll stick to the bottom of the pan.</p>
+            </div>
+            <a href="review.html"><button>Upload a Review</button></a>
+        </div>
+        <footer>
+            <div id="footer-recipe">
+                <div class="info">
+                    <img src="assets/logo2.png" alt="logo">
+                    <div class="newsletter">
+                        <p>Subscribe to our newsletter!</p>
+                        <div class="input-data">
+                            <form>
+                                <input type="email" id="email" name="email" placeholder="E-mail">
+                            </form>
+                            <button href="#">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="socials">
+                        <p>Follow us</p>
+                        <a><i class='bx bxl-facebook-square'></i></a>
+                        <a><i class='bx bxl-instagram-alt'></i></a>
+                        <a><i class='bx bxl-twitter'></i></a>
+                    </div>
+                    <div class="call">
+                        <p>Call us</p>
+                        <p><b>+62 123 1678 932</b></p>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    <hr>
+                    <p>© 2023 Grandma's Reviews, Jakarta, Indonesia. All Rights Reserved</p>
+                </div>
+            </div>
+
+        </footer>
+</body>
+
+</html>

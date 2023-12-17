@@ -1,0 +1,58 @@
+.btn1 {
+    text-wrap: nowrap;
+    margin: auto;
+}
+
+.btn {
+    text-wrap: nowrap;
+    vertical-align: middle;
+
+}
+
+img {
+    height: 25%;
+    width: 25%;
+}
+
+body {
+    display: flex;
+    background-color: #c7ab59;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: 40%;
+    background-color: #302718;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-self: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    button span {
+        display: none;
+    }
+}
+
+.input-group-text {
+    width: 40%;
+    min-width: 100px;
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        width: 90%;
+    }
+}
+
+.data {
+    margin-bottom: 20px;
+}

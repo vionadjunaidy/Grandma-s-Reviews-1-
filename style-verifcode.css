@@ -1,0 +1,56 @@
+.btn1 {
+    text-wrap: nowrap;
+    margin: auto;
+}
+
+a {
+    color: #DED2A8;
+}
+
+p {
+    color: #DED2A8;
+}
+
+.btn {
+    text-wrap: nowrap;
+    vertical-align: middle;
+}
+
+body {
+    display: flex;
+    background-color: #c7ab59;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: 40%;
+    background-color: #302718;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-self: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+    button span {
+        display: none;
+    }
+}
+
+.input-group-text {
+    width: 30%;
+    min-width: 150px;
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        width: 90%;
+    }
+}

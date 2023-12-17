@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olive Garden Chicken Gnocchi Soup</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style-recipe.css">
+    <script src="script-recipe.js"></script>
+</head>
+
+<body>
+    <div class="navbar" id="myNavbar">
+        <div class="sidebar">
+            <div class="top">
+                <div class="exit" onclick=hideSidebar()>
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <a href="index.html">
+                    <div class="item">
+                        <button class="page background-hover">Home</button>
+                    </div>
+                </a>
+                <div class="smborder"></div>
+
+                <a href="restaurant(1).html">
+                    <div class="item">
+                        <button class="page background-hover">Restaurants</button>
+                    </div>
+                </a>
+                <div class="smborder"></div>
+
+                <a href="recipe(1).html">
+                    <div class="item">
+                        <button class="page background-hover active">Recipes</button>
+                    </div>
+                </a>
+                <div class="smborder"></div>
+
+                <a href="aboutus.html">
+                    <div class="item">
+                        <button class="page background-hover">About Us</button>
+                    </div>
+                </a>
+                <div class="smborder"></div>
+            </div>
+
+            <div class="login">
+                <div class="item" id="loginContainer">
+                    <a href="login.html">
+                        <button class="page">Log in</button>
+                    </a>
+                </div>
+            </div>
+            <div class="smborder"></div>
+        </div>
+
+        <div class="home">
+            <div class="items">
+                <div class="left">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="logo.png" alt="Grandma's Reviews Logo">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="restaurant(1).html" class="background-hover"><button
+                                class="page ">Restaurants</button></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="recipe(1).html" class="background-hover"><button
+                                class="page active">Recipes</button></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="aboutus.html" class="background-hover"><button class="page">About Us</button></a>
+                    </div>
+                </div>
+
+                <div class="login">
+                    <div class="item">
+                        <a href="login.html">
+                            <button class="page">Log in</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu" onclick=showSidebar()>
+            <a href="#">
+                <i class='bx bx-menu'></i>
+            </a>
+        </div>
+    </div>
+    <div class="cheat-space"></div>
+
+    <div class="container">
+        <div class="description">
+            <div class="content">
+                <h1>Olive Garden Chicken Gnocchi Soup</h1>
+                <p><b>By Stephanie Manley</b></p>
+                <p class="summary">This rich soup has This warm bowl of goodness features roasted tender chicken, soft
+                    pillowy gnocchi, shredded carrots, celery, and fresh spinach.</p>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                <p><i class='bx bxs-bowl-hot'></i> <b>Servings: </b>4 | <i class='bx bxs-time'></i> <b>Prep: </b> 5
+                    minutes | <i class='bx bxs-time'></i> <b>Cook: </b>10 minutes</p>
+            </div>
+        </div>
+
+        <div class="picture">
+            <img src="assets/recipe/gnocchi-soup.jpg" alt="Olive Garden Chicken Gnocchi Soup">
+        </div>
+    </div>
+
+    <div class="ingredients">
+        <h2>Ingredients</h2>
+
+        <div class="content">
+            <div class="item">
+                <img src="assets/recipe/aglio olio/olive-oil.png" alt="olive oil">
+                <p>3 tablespoons extra-virgin olive oil divided</p>
+            </div>
+
+            <div class="item">
+                <img src="assets/recipe/aglio olio/asparagus.png" alt="asparagus">
+                <p>2 bunches asparagus</p>
+            </div>
+
+            <div class="item">
+                <img src="assets/recipe/aglio olio/salmon.png" alt="salmon">
+                <p>1 whole salmon filet de-boned</p>
+            </div>
+
+            <div class="item">
+                <img src="assets/recipe/aglio olio/salt.png" alt="salt">
+                <p>Salt and pepper</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="steps">
+        <h2>Steps</h2>
+        <div class="carousel">
+            <div class="slider">
+                <section>
+                    <div class="subheading">
+                        <h3>Step 1</h3>
+                    </div>
+                    <div class="desc">
+                        <img src="assets/recipe/pan-seared-salmon/step1.png" alt="boil spaghetti">
+                        <p>Season the fillets on both sides with salt and pepper.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="subheading">
+                        <h3>Step 2</h3>
+                    </div>
+                    <div class="desc">
+                        <img src="assets/recipe/pan-seared-salmon/step2.png" alt="toast garlic in olive oil">
+                        <p>Cook for approximately 4-5 minutes or until they are golden brown and crispy on the first
+                            side.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="subheading">
+                        <h3>Step 3</h3>
+                    </div>
+                    <div class="desc">
+                        <img src="assets/recipe/pan-seared-salmon/step3.png" alt="coat pasta in sauce">
+                        <p>Add the asparagus in a single layer.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="subheading">
+                        <h3>Step 4</h3>
+                    </div>
+                    <div class="desc">
+                        <img src="assets/recipe/pan-seared-salmon/step3.png" alt="incorporate pasta water">
+                        <p>Sprinkle with a pinch of salt.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="subheading">
+                        <h3>Step 5</h3>
+                    </div>
+                    <div class="desc">
+                        <img src="assets/recipe/pan-seared-salmon/pan-seared-salmon.jpg" alt="final product">
+                        <p>Serve and enjoy!</p>
+                    </div>
+                </section>
+            </div>
+            <div class="controls">
+                <span class="arrow left"><i class='bx bxs-left-arrow'></i></span>
+                <span class="arrow right"><i class='bx bxs-right-arrow'></i></span>
+                <ul>
+                    <li class="selected"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-row">
+        <div class="label">
+            <h2>Nutrition Facts</h2>
+            <div class="smborder"></div>
+            <br>
+            <p><b>Calories</b> <span class="right">367kcal</span></p>
+            <p><b>Carbohydrates</b> <span class="right">56g</span></p>
+            <p><b>Protein</b> <span class="right">28g</span></p>
+            <p><b>Fat</b> <span class="right">4g</span></p>
+            <p><b>Saturated Fat</b> <span class="right">1g</span></p>
+            <p><b>Cholesterol</b> <span class="right">252mg</span></p>
+            <p><b>Sodium</b> <span class="right">831kcal</span></p>
+            <p><b>Potassium</b> <span class="right">143mg</span></p>
+            <p><b>Fiber</b> <span class="right">2g</span></p>
+            <p><b>Sugar</b> <span class="right">1g</span></p>
+            <p><b>Vitamin A</b> <span class="right">780IU</span></p>
+            <p><b>Vitamin C</b> <span class="right">15mg</span></p>
+            <p><b>Calcium</b> <span class="right">161mg</span></p>
+            <p><b>Iron</b> <span class="right">4mg</span></p>
+        </div>
+
+        <div class="reviews">
+            <h2>What they say...</h2>
+            <div class="speech-bubble"><b>Viriya S.</b>
+                <div class="smborder"></div>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <p>Quick and easy to make. Perfect when I don't really feel like cooking.</p>
+            </div>
+
+            <div class="speech-bubble"><b>Sesilia N.</b>
+                <div class="smborder"></div>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <p>This is really yummy. The reviews weren't lying when they said it's really easy to make. </p>
+            </div>
+
+            <div class="speech-bubble"><b>Dennis W.</b>
+                <div class="smborder"></div>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #b19232;"></i>
+                <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                <i class='bx bxs-star' style="color: #6c6c6c;"></i>
+                <p>For someone who can't cook, this recipe is a bit oversimplified and I had to struggle for a bit. This
+                    isn't really for beginners but for people who can cook but is lazy to.</p>
+            </div>
+            <a href="review.html"><button>Upload a Review</button></a>
+        </div>
+        <footer>
+            <div id="footer-recipe">
+                <div class="info">
+                    <img src="assets/logo2.png" alt="logo">
+                    <div class="newsletter">
+                        <p>Subscribe to our newsletter!</p>
+                        <div class="input-data">
+                            <form>
+                                <input type="email" id="email" name="email" placeholder="E-mail">
+                            </form>
+                            <button href="#">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="socials">
+                        <p>Follow us</p>
+                        <a><i class='bx bxl-facebook-square'></i></a>
+                        <a><i class='bx bxl-instagram-alt'></i></a>
+                        <a><i class='bx bxl-twitter'></i></a>
+                    </div>
+                    <div class="call">
+                        <p>Call us</p>
+                        <p><b>+62 123 1678 932</b></p>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    <hr>
+                    <p>© 2023 Grandma's Reviews, Jakarta, Indonesia. All Rights Reserved</p>
+                </div>
+            </div>
+
+        </footer>
+</body>
+
+</html>

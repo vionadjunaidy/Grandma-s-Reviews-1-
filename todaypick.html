@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="navbar" id="myNavbar">
+        <div class="sidebar">
+            <div class="exit" onclick=hideSidebar()>
+                <a href="#">
+                <i class='bx bx-x'></i>            
+                </a>
+            </div>
+
+            <div class="dropdown">
+                <button class="drop">Home</button>
+            </div>
+    
+            <div class="dropdown">
+                <button class="drop">Restaurants
+                    <i class='bx bxs-down-arrow'></i>
+                </button>
+                <div class="dropdowncontent">
+                    <a href="#">Local Indonesian</a>
+                    <a href="#">Western</a>
+                    <a href="#">Asian</a>
+                </div>
+            </div>
+    
+            <div class="dropdown">
+                <button class="drop">Recipes
+                    <i class='bx bxs-down-arrow'></i>
+                </button>
+                <div class="dropdowncontent">
+                    <a href="#">Local Indonesian</a>
+                    <a href="#">Western</a>
+                    <a href="#">Asian</a>
+                </div>
+            </div>
+    
+            <div class="dropdown">
+                <button class="drop">Today's Pick
+                    <i class='bx bxs-down-arrow'></i>
+                </button>
+                <div class="dropdowncontent">
+                    <a href="#">Breakfast</a>
+                    <a href="#">Lunch</a>
+                    <a href="#">Dinner</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="home">
+            <div class="dropdown">
+                <button class="drop">Home</button>
+            </div>
+
+            <div class="dropdown">
+                <button class="drop">Restaurants
+                    <i class='bx bxs-down-arrow'></i>
+                </button>
+                <div class="dropdowncontent">
+                    <a href="#">Local Indonesian</a>
+                    <a href="#">Western</a>
+                    <a href="#">Asian</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="drop">Recipes
+                    <i class='bx bxs-down-arrow'></i>
+                </button>
+                <div class="dropdowncontent">
+                    <a href="#">Local Indonesian</a>
+                    <a href="#">Western</a>
+                    <a href="#">Asian</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="drop">Today's Pick
+                    <i class='bx bxs-down-arrow'></i>
+                </button>
+                <div class="dropdowncontent">
+                    <a href="#">Breakfast</a>
+                    <a href="#">Lunch</a>
+                    <a href="#">Dinner</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu" onclick=showSidebar()>
+            <a href="#">
+            <i class='bx bx-menu'></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="boxes">
+        <div class="restaurant">
+            <h2>Breakfast</h2>
+            <h3>Cafe Batavia, Kota Tua</h3>
+            <img src="https://i.pinimg.com/originals/13/35/0d/13350d59a82155aac7c46adef696ccbc.png">
+            <p>As a classic-looking cafe, Café Batavia serves over 700 pax per day and has attracted honored and reputable guests from all over the world; Queen of Sweden, Vice President of Argentina, President of Slovakia, Ambassadors of the United States, France & Morocco, and many others.</p>
+            <a href="cafe-batavia.html"><button class="button">Read More</button></a>
+        </div>
+        
+
+        <div class="recipe">
+            <h2>Lunch</h2>
+            <h3>Cork & Screw, Plaza Indonesia</h3>
+            <img src="https://static.chope.co/uploads/2023/07/s-700x350x80xw_1689000894_11306.jpg?date=9c974e85">
+            <p>A restaurant and bar inside a wine shop, Cork&Screw is a sophisticated dining destination conveniently located in Jakarta’s hip Thamrin and SCBD area. Our cellar is home to the largest wine selection in the country while the kitchen focuses on an extensive menu comprising of European and Asian favorites.</p>
+            <a href="cork-screw.html"><button class="button">Read More</button></a>
+        </div>
+
+        <div class="today">
+            <h2>Dinner</h2>
+            <h3>Casa Cuomo Ristorante, Gunawarman</h3>
+            <img src="https://i.ytimg.com/vi/DotyuEeb_Rw/maxresdefault.jpg">
+            <p>Casa Cuomo Ristorante specializes in Italian-Japanese fusion food, focusing mainly on the pizza and the pastas, which chef Salvatore Cuomo making a branch in Indonesia from the main restaurant in Japan.</p>
+            <a href="casacuomo.html"><button class="button">Read More</button></a>
+        </div>
+    </div>
+
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+</script>
+
+</body>
+</html>

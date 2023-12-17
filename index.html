@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script-navbar.js"></script>
+    <script src="script-active.js"></script>
+</head>
+
+<body>
+    <div class="navbar" id="myNavbar">
+        <div class="sidebar">
+            <div class="top">
+                <div class="exit" onclick=hideSidebar()>
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <a href="index.html">
+                    <div class="item">
+                        <button class="page background-hover active">Home</button>
+                    </div>
+                </a>
+                <div class="smborder"></div>
+
+                <a href="restaurant(1).html">
+                    <div class="item">
+                        <button class="page background-hover">Restaurants</button>
+                    </div>
+                </a>
+                <div class="smborder"></div>
+
+                <a href="recipe(1).html">
+                    <div class="item">
+                        <button class="page background-hover">Recipes</button>
+                    </div>
+                </a>
+                <div class="smborder"></div>
+
+                <a href="aboutus.html">
+                    <div class="item">
+                        <button class="page background-hover">About Us</button>
+                    </div>
+                </a>
+                <div class="smborder"></div>
+            </div>
+
+            <div class="login">
+                <div class="item" id="loginContainer">
+                    <a href="login.html">
+                        <button class="page">Log in</button>
+                    </a>
+                </div>
+            </div>
+            <div class="smborder"></div>
+        </div>
+
+        <div class="home">
+            <div class="items">
+                <div class="left">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="logo.png" alt="Grandma's Reviews Logo">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="restaurant(1).html" class="background-hover"><button
+                                class="page ">Restaurants</button></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="recipe(1).html" class="background-hover"><button class="page">Recipes</button></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="aboutus.html" class="background-hover"><button class="page">About Us</button></a>
+                    </div>
+                </div>
+
+                <div class="login">
+                    <div class="item">
+                        <a href="login.html">
+                            <button class="page">Log in</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu" onclick=showSidebar()>
+            <a href="#">
+                <i class='bx bx-menu'></i>
+            </a>
+        </div>
+    </div>
+    <div class="cheat-space"></div>
+    <h1>Today's Pick</h1>
+    <div class="todays-pick">
+        <div class="restaurant">
+            <h2>Breakfast</h2>
+            <p><b>Cafe Batavia, Kota Tua</b></p>
+            <img src="assets/resto/cafe-batavia/cafe-batavia1.jpg" alt="Cafe Batavia">
+            <p>As a classic-looking cafe, Café Batavia serves over 700 pax per day and has attracted honored and
+                reputable guests from all over the world; Queen of Sweden, Vice President of Argentina, President of
+                Slovakia, Ambassadors of the United States, France & Morocco, and many others.</p>
+            <a href="cafe-batavia.html"><button class="button">Read More</button></a>
+        </div>
+
+
+        <div class="restaurant">
+            <h2>Lunch</h2>
+            <p><b>Cork & Screw, Plaza Indonesia</b></p>
+            <img src="assets/resto/cork-screw/cork-screw1.jpg" alt="Cork & Screw">
+            <p>A restaurant and bar inside a wine shop, Cork&Screw is a sophisticated dining destination conveniently
+                located in Jakarta’s hip Thamrin and SCBD area. Our cellar is home to the largest wine selection in the
+                country while the kitchen focuses on an extensive menu comprising of European and Asian favorites.</p>
+            <a href="cork-screw.html"><button class="button">Read More</button></a>
+        </div>
+
+        <div class="restaurant">
+            <h2>Dinner</h2>
+            <p><b>Casa Cuomo Ristorante, Gunawarman</b></p>
+            <img src="assets/resto/casa/casa1.jpg" alt="Casa Cuomo Ristorante">
+            <p>Casa Cuomo Ristorante specializes in Italian-Japanese fusion food, focusing mainly on the pizza and the
+                pastas, which chef Salvatore Cuomo making a branch in Indonesia from the main restaurant in Japan.</p>
+            <a href="casacuomo.html"><button class="button">Read More</button></a>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer">
+            <div class="info">
+                <img src="assets/logo2.png" alt="logo">
+                <div class="newsletter">
+                    <p>Subscribe to our newsletter!</p>
+                    <div class="input-data">
+                        <form>
+                            <input type="email" id="email" name="email" placeholder="E-mail">
+                        </form>
+                        <button href="#">Subscribe</button>
+                    </div>
+                </div>
+                <div class="socials">
+                    <p>Follow us</p>
+                    <a><i class='bx bxl-facebook-square'></i></a>
+                    <a><i class='bx bxl-instagram-alt'></i></a>
+                    <a><i class='bx bxl-twitter'></i></a>
+                </div>
+                <div class="call">
+                    <p>Call us</p>
+                    <p><b>+62 123 1678 932</b></p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <hr>
+                <p>© 2023 Grandma's Reviews, Jakarta, Indonesia. All Rights Reserved</p>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
