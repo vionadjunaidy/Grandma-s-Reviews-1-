@@ -1,16 +1,22 @@
 $(document).ready(function () {
-
-    $(".buttons").click(function () {
-        var filter = $(this).attr("data-filter")
-        if (filter == "all") {
-            $(".box").show(400);
-        } else {
-            $(".box").not("." + filter).hide(200);
-            $(".box").filter("." + filter).show(400);
-        }
+    $('#byRating').on('click', function () {
+        $('.list-recipes div.rating:hidden').map(function () {
+            return { val: parseFloat($(this).text(), 10), el: this.parentNode.parentNode };
+        }).sort(function (a, b) {
+            return b.val - a.val;
+        }).map(function () {
+            return this.el;
+        }).appendTo('.list-recipes');
     });
-});
-$(".dropdowncontent").hide();
-$(".drop").click(function () {
-    $(this).next(".dropdowncontent").slideToggle("slow");
+    $('#byRating1').on('click', function () {
+        $('.list-recipes div.rating:hidden').map(function () {
+            return { val: parseFloat($(this).text(), 10), el: this.parentNode.parentNode };
+        }).sort(function (a, b) {
+            return a.val - b.val;
+        }).map(function () {
+            return this.el;
+        }).appendTo('.list-recipes');
+    });
+
+    $('.rating').hide();
 });
